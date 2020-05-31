@@ -67,7 +67,9 @@ class Header extends React.Component {
                 {/* the links at the top of the screen */}
                 <nav className="navbar navbar-fixed-top d-flex bd-highlight mb-3">
 
-                    <a className="nav-item mr-auto p-3" href="#header">musab</a>
+                    <a className="nav-item mr-auto p-3" href="#header">
+                        <img src={process.env.PUBLIC_URL + '/moose.svg'} id="logo"></img>
+                    </a>
                     <Link activeClass="active" to="projects" className="nav-item p-3" spy={true} smooth={true} duration={500}>projects</Link>
                     <Link activeClass="active" to="about" className="nav-item p-3" spy={true} smooth={true} duration={500}>about</Link>
                 </nav>

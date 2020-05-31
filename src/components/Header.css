@@ -7,6 +7,11 @@
     color: #FCA311;
 }
 
+#logo {
+    width: 100px;
+    height: auto;
+}
+
 
 a {
     color: white;
