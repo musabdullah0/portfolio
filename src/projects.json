@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "slug": "sendit",
+        "title": "sendit",
+        "description": "sendit is a small app I built to automatically text myself photos from my laptop. I meant to expand this app to other friends and family who wanted a faster way than email to send photos between their devices. However, I realized that using the free tier of the twilio api disallowed me from programmatically adding accounts I could text. Additionally, I had a very low limit of media messages I could send before having to drop more money.",
+        "image": "sendit.png"
+    },
+    {
+        "id": 2,
+        "slug": "study-mode",
+        "title": "study mode",
+        "description": "Study Mode is a web app that helps you find where your friends are studying, so you can spend less time goofing off and more time working. This is a progressive web app which means that if you are on a mobile device, you can press 'Add to Home Screen' and be able to access Study Mode as if it were a normal mobile app you downloaded on the App Store. It can even work (with limited capabilites of course) offline. It was built with HTML/CSS/JS on the front end and Firebase on the backend.",
+        "image": "study-mode.png"
+    },
+    {
+        "id": 3,
+        "slug": "amazon-wishlist-tracker",
+        "title": "amazon wishlist tracker",
+        "description": "Amazon Wishlist Tracker is a Flask web application I built to track prices of items I was interested in purchasing. All I have to do is add the device product ID from the Amazon website, select an alert price, then sit and wait for an email from Amazon Wishlist Tracker saying that the product hit that price.",
+        "image": "amazon.png"
+    },
+    {
+        "id": 4,
+        "slug": "vibe-check",
+        "title": "vibe check",
+        "description": "Vibe Check is a Chrome extension that clears hateful content from a web page. It does this by utilizing javascript to scrape all of the text data displayed on a given website, feeding this text through a natural language processing and sentiment analysis machine learning model (code for fancy tool that checks your vibe), and then covering up content deemed harmful by the ParallelDots API based on a negativity rating.",
+        "image": "vibe-check.png"
+    },
+    {
+        "id": 5,
+        "slug": "digits-ai",
+        "title": "digits.ai",
+        "description": "digits.ai is a GUI built with PyGame that uses a feedforward neural network to recognize digits drawn by the user. This was trained with the MNIST handwritten digit database.",
+        "image": "digits-ai.png"
+    }
+]
