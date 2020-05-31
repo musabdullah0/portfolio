@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Strapi from 'strapi-sdk-javascript/build/main';
+import ProjectsList from './components/ProjectsList';
+import Header from './components/Header'
+import About from './components/About'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const strapi_url = 'http://localhost:1337';
+const strapi = new Strapi(strapi_url);
+
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            projects: []
+        }
+    }
+    async componentDidMount() {
+        try {
+            const projects = await strapi.getEntries('projects')
+            this.setState({ projects });
+        } catch (err) {
+            alert(err);
+        }
+    }
+    render() {
+        return (
+            <div>
+                <Header />
+                <ProjectsList projects={this.state.projects} base_url={strapi_url} />
+                <About />
+            </div>
+        )
+    }
 }
-
 export default App;

@@ -1,0 +1,14 @@
+#about {
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.contact-item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 50px;
+}

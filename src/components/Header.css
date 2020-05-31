@@ -1,0 +1,48 @@
+.nav-item {
+    color: white !important;
+    font-size: 20px;
+}
+
+.active {
+    color: #FCA311;
+}
+
+
+a {
+    color: white;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #FCA311;
+    text-decoration: none;
+}
+
+.resume-btn-container {
+    display: flex;
+    justify-content: center;
+}
+.resume-btn {
+    border: none;
+    color: black;
+    background-color: #FCA311;
+    padding: 5px 40px 5px 40px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 1024px) {
+    a {
+        font-size: 24px;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+
+    .resume-btn {
+        font-size: 36px;
+        margin: 20px;
+        border-radius: 40px;
+    }
+
+  }

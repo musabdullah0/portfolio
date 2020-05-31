@@ -1,0 +1,40 @@
+#projects {
+    background-color: white;
+    margin: 5px;
+    padding: 3px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.project-card {
+    margin: 10px 5px 10px 5px;
+    background-color: #E5E5E5;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    align-self: center;
+    width: 75%;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .project-title {
+        font-size: 36px;
+    }
+    .project-card {
+        flex-direction: row;
+    }
+    .project-text {
+        margin: 20px;
+        padding: 5px;
+    }
+    .project-image {
+        width: 25%;
+    }
+}
