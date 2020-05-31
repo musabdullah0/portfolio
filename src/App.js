@@ -5,7 +5,7 @@ import Header from './components/Header'
 import About from './components/About'
 
 
-const strapi_url = 'http://localhost:1337';
+const strapi_url = 'https://react-strapi-portfolio-backend.herokuapp.com';
 const strapi = new Strapi(strapi_url);
 
 class App extends React.Component {
