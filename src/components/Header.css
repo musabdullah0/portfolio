@@ -39,17 +39,12 @@ a:hover {
 #sketch-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
 .overlap {
     position: absolute;
-    top: 100px;
-    width: 500px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 @media only screen and (min-width: 1024px) {
